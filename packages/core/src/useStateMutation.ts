@@ -7,9 +7,10 @@ export function useStateMutation<TState>(context: React.Context<Store<TState> | 
 
   const mutate = useCallback(
     (next: TState | ((prev: TState) => TState)) => {
+      const currentState = store.getState()
       const nextState =
         typeof next === 'function'
-          ? (next as (prev: TState) => TState)(store.getState())
+          ? (next as (prev: TState) => TState)(currentState)
           : next
 
       store.setState(nextState)

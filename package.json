@@ -1,32 +1,20 @@
 {
-  "name": "react-state-context",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "react-state-context-monorepo",
+  "private": true,
   "type": "module",
+  "workspaces": [
+    "packages/*",
+    "playgrounds/*"
+  ],
   "scripts": {
-    "build": "tsc",
-    "lint": "eslint src",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm -w react-state-context run build",
+    "test": "npm -w react-state-context run test",
+    "test:watch": "npm -w react-state-context run test:watch",
+    "test:coverage": "npm -w react-state-context run test:coverage",
+    "format": "prettier --write ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "@eslint/js": "9.39.1",
-    "@types/react": "19.2.7",
-    "eslint": "9.39.1",
-    "eslint-config-prettier": "10.1.8",
-    "prettier": "3.7.3",
-    "typescript": "5.9.3",
-    "typescript-eslint": "8.48.0"
-  },
-  "dependencies": {
-    "react": "19.2.0"
-  },
-  "peerDependencies": {
-    "react": "^18.0.0 || ^19.0.0"
+    "@repo/eslint-config": "workspace:*",
+    "prettier": "3.7.4"
   }
 }

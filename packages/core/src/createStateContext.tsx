@@ -1,15 +1,6 @@
 import React, { createContext, useRef } from 'react'
-import type { Store } from './types'
+import type { StateContext, StateContextProviderProps, Store } from './types'
 import { createStore } from './createStore'
-
-type StateContextProviderProps<TState> = {
-  children: React.ReactNode
-  initialState: TState
-}
-
-export type StateContext<TState> = React.Context<Store<TState> | null> & {
-  Provider: React.FC<StateContextProviderProps<TState>>
-}
 
 export function createStateContext<TState>(): StateContext<TState> {
   const StoreContext = createContext<Store<TState> | null>(null)

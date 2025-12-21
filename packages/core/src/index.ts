@@ -5,5 +5,10 @@ export { createStateMutation } from './createStateMutation'
 export { useStateSelector } from './useStateSelector'
 export { useStateMutation } from './useStateMutation'
 
-export type { Selector, Store, Listener } from './types'
-export type { StateContext } from './createStateContext'
+export type {
+  Selector,
+  Store,
+  Listener,
+  StateContextProviderProps,
+  StateContext,
+} from './types'

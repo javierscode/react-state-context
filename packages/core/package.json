@@ -1,0 +1,49 @@
+{
+  "name": "react-state-context",
+  "version": "1.0.0",
+  "description": "Lightweight React state management with Context API and useSyncExternalStore",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "react",
+    "state",
+    "context",
+    "hooks",
+    "useSyncExternalStore"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "@testing-library/react": "^16.1.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "happy-dom": "^15.11.6",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0 ",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
