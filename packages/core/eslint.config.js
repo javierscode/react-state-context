@@ -1,1 +1,1 @@
-export { default } from 'eslint-config-custom'
+export { default } from '@repo/eslint-config'
