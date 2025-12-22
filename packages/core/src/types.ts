@@ -9,11 +9,4 @@ export type Store<TState> = {
   subscribe: (listener: Listener) => () => void
 }
 
-export type StateContextProviderProps<TState> = {
-  children: React.ReactNode
-  initialState: TState
-}
-
-export type StateContext<TState> = React.Context<Store<TState> | null> & {
-  Provider: React.FC<StateContextProviderProps<TState>>
-}
+export type StateContext<TState> = React.Context<Store<TState> | null>
