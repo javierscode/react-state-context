@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+
 import { shallowEqual } from '../src/shallowEqual'
 
 describe('shallowEqual', () => {
@@ -57,4 +58,3 @@ describe('shallowEqual', () => {
     expect(shallowEqual({ a: NaN }, { a: NaN })).toBe(true)
   })
 })
-
