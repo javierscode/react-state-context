@@ -6,6 +6,11 @@ dist
 build
 coverage
 
+# next.js
+.next/
+out/
+
+
 # Environment files
 .env
 .env.local

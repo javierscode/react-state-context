@@ -12,7 +12,8 @@
     "test:watch": "npm -w @javierscode/react-state-context run test:watch",
     "test:coverage": "npm -w @javierscode/react-state-context run test:coverage",
     "format": "prettier --write .",
-    "dev:vite": "npm -w vite run dev"
+    "dev:vite": "npm -w vite run dev",
+    "dev:next-js": "npm -w next-js run dev"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
