@@ -1,11 +1,12 @@
 import { useCheckoutMutation } from './context'
 import { type CartItem } from './CheckoutState'
+import { memo } from 'react'
 
 type CartItemCardProps = {
   item: CartItem
 }
 
-export function CartItemCard({ item }: CartItemCardProps) {
+export const CartItemCard = memo(function CartItemCard({ item }: CartItemCardProps) {
   const mutate = useCheckoutMutation()
 
   const updateQuantity = (delta: number) => {
@@ -55,4 +56,4 @@ export function CartItemCard({ item }: CartItemCardProps) {
       </div>
     </div>
   )
-}
+})
