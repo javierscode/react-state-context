@@ -1,11 +1,12 @@
 import { useTaskBoardMutation } from './context'
 import { deleteTask, updateTaskStatus, type Task } from './TaskBoardState'
+import { memo } from 'react'
 
 type TaskCardProps = {
   task: Task
 }
 
-export function TaskCard({ task }: TaskCardProps) {
+export const TaskCard = memo(function TaskCard({ task }: TaskCardProps) {
   const mutate = useTaskBoardMutation()
 
   const statusColors = {
@@ -81,4 +82,4 @@ export function TaskCard({ task }: TaskCardProps) {
       </div>
     </div>
   )
-}
+})
