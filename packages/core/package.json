@@ -12,7 +12,9 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "tsc",
@@ -29,8 +31,16 @@
     "hooks",
     "useSyncExternalStore"
   ],
-  "author": "",
+  "author": "javierscode",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javierscode/react-selective-context.git"
+  },
+  "bugs": {
+    "url": "https://github.com/javierscode/react-selective-context/issues"
+  },
+  "homepage": "https://github.com/javierscode/react-selective-context#readme",
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0"
   },
