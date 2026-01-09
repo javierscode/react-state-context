@@ -96,7 +96,7 @@ function CheckoutPage() {
 ```tsx
 // Deep inside CartSummary component tree
 function CartItemCount() {
-  // Only re-renders when items array changes
+  // Only re-renders when itemCount changes
   const itemCount = useCheckoutSelector((state) =>
     state.items.reduce((sum, item) => sum + item.quantity, 0)
   )
