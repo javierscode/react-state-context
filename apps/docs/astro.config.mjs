@@ -14,9 +14,9 @@ export default defineConfig({
         },
       ],
       // Configure i18n with English as default and Spanish as secondary language
-      defaultLocale: 'en',
+      defaultLocale: 'root',
       locales: {
-        en: {
+        root: {
           label: 'English',
           lang: 'en',
         },
