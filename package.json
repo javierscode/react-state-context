@@ -4,6 +4,7 @@
   "license": "MIT",
   "type": "module",
   "workspaces": [
+    "apps/*",
     "packages/*",
     "playgrounds/*"
   ],
@@ -13,6 +14,7 @@
     "test:watch": "npm -w react-selective-context run test:watch",
     "test:coverage": "npm -w react-selective-context run test:coverage",
     "format": "prettier --write .",
+    "dev:docs": "npm -w docs run dev",
     "dev:vite": "npm -w vite run dev",
     "dev:next-js": "npm -w next-js run dev"
   },
